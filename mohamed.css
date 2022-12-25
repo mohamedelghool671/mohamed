@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>My Programming Languages Website</title>
+  <style>
+    /* Add your CSS styles here */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    li {
+      margin: 0 10px;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    a:hover {
+      color: #777;
+    }
+    #video-container {
+      display: none;
+      width: 640px;
+      height: 360px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Programming Languages Website</h1>
+  <p>Click on a language below to learn more:</p>
+  <ul>
+    <li><a href="#" onclick="showJavaVideo()">Java</a></li>
+    <li><a href="#" onclick="showJavaScriptVideo()">JavaScript</a></li>
+    <li><a href="#" onclick="showPythonVideo()">Python</a></li>
+    <li><a href="#" onclick="showCppVideo()">C++</a></li>
+  </ul>
+  <div id="video-container">
+    <!-- Add your YouTube video embed code here -->
+  </div>
+  <script>
+    // Add your JavaScript functions here
+    function showJavaVideo() {
+      document.getElementById("video-container").innerHTML = 
+        '<iframe width="640" height="360" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      document.getElementById("video-container").style.display = "block";
+    }
+    function showJavaScriptVideo() {
+      document.getElementById("video-container").innerHTML = 
+        '<iframe width="640" height="360" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      document.getElementById("video-container").style.display = "block";
+    }
+    function showPythonVideo() {
+      document.getElementById("video-container").innerHTML = 
+        '<iframe width="640" height="360" src="https://www.youtube.com/embed/your-video-id"
